@@ -1,5 +1,7 @@
 # FormSaver for Blazor
 
+[![NuGet](https://img.shields.io/nuget/v/MSJD.FormSaver.svg?style=flat-square)](https://www.nuget.org/packages/MSJD.FormSaver/)
+
 **Advanced FormSaver Demo | LocalStorage + Encryption**
 
 FormSaver is a Blazor service that enables automatic saving, restoring, and encryption of complex form data in the browser's local storage. It supports nested objects, offline draft saving, and secure storage without requiring a backend.
@@ -18,10 +20,15 @@ FormSaver is a Blazor service that enables automatic saving, restoring, and encr
 
 ---
 
+## Installation
+
+Install the package via NuGet:
+
+```.NET CLI
+dotnet add package MSJD.FormSaver --version 1.0.5
+```
+
 ## Demo Preview
-
-![FormSaver Demo Preview](https://mohammadsajjadian/images/demos/form-saver.png)  
-
 Try it live: [FormSaver Demo](https://mohammadsajjadian.ir/demo/form-saver)
 
 ---
