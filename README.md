@@ -76,6 +76,7 @@ Razor component example:
             await FormSaver.InitializeAsync();
             var saved = await FormSaver.LoadAsync<UserModel>(Key);
             if (saved != null) User = saved;
+            StateHasChanged();
         }
     }
 
