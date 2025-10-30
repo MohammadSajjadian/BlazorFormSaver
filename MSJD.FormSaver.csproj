@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
+
+		<!-- NuGet package metadata -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>MSJD.FormSaver</PackageId>
+		<Version>1.0.5</Version>
+		<Authors>Mohammad Sajjadian</Authors>
+
+		<!-- Updated Description -->
+		<Description>
+			FormSaver is a Blazor service for securely saving, loading, and removing form data
+			in the browser using localStorage with AES-GCM encryption. Supports generic models,
+			async initialization, and works with both Blazor WebAssembly and Server.
+		</Description>
+
+		<!-- Updated Tags -->
+		<PackageTags>
+			blazor;form;formsaver;localstorage;encryption;client-side;async;component
+		</PackageTags>
+
+		<RepositoryUrl>https://github.com/MohammadSajjadian/BlazorFormSaver</RepositoryUrl>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="wwwroot/brand-logo.png">
+			<Pack>True</Pack>
+			<PackagePath>/</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" />
+	</ItemGroup>
+</Project>
